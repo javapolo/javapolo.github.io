@@ -79,16 +79,17 @@
 
 
 
-<meta name="description" content="tech notes">
-<meta property="og:type" content="website">
-<meta property="og:title" content="三省轩">
-<meta property="og:url" content="http://javapolo.github.io/index.html">
+<meta name="description" content="概要babel本身是一个工具，负责将es6/es7的代码转换成es5的代码，以便在现代浏览器里面运行，更重要的是,babel的扩展机制使其可以为React转换jsx，为Flow做静态语法分析。 babel由各种小模块组成，它通过预置一些插件来编译代码，我们接下来会谈到。 注意: 假设你本地安装了node和npm，且不排斥使用命令行工具，同时确保你的项目里面包含pajkage.json文件； bab">
+<meta property="og:type" content="article">
+<meta property="og:title" content="关于babel，你应该知道的一些事 - 工具篇">
+<meta property="og:url" content="http://javapolo.github.io/2018/05/27/关于babel，你应该知道的一些事/index.html">
 <meta property="og:site_name" content="三省轩">
-<meta property="og:description" content="tech notes">
+<meta property="og:description" content="概要babel本身是一个工具，负责将es6/es7的代码转换成es5的代码，以便在现代浏览器里面运行，更重要的是,babel的扩展机制使其可以为React转换jsx，为Flow做静态语法分析。 babel由各种小模块组成，它通过预置一些插件来编译代码，我们接下来会谈到。 注意: 假设你本地安装了node和npm，且不排斥使用命令行工具，同时确保你的项目里面包含pajkage.json文件； bab">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-06-02T04:08:09.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="三省轩">
-<meta name="twitter:description" content="tech notes">
+<meta name="twitter:title" content="关于babel，你应该知道的一些事 - 工具篇">
+<meta name="twitter:description" content="概要babel本身是一个工具，负责将es6/es7的代码转换成es5的代码，以便在现代浏览器里面运行，更重要的是,babel的扩展机制使其可以为React转换jsx，为Flow做静态语法分析。 babel由各种小模块组成，它通过预置一些插件来编译代码，我们接下来会谈到。 注意: 假设你本地安装了node和npm，且不排斥使用命令行工具，同时确保你的项目里面包含pajkage.json文件； bab">
 
 
 
@@ -118,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://javapolo.github.io/"/>
+  <link rel="canonical" href="http://javapolo.github.io/2018/05/27/关于babel，你应该知道的一些事/"/>
 
 
 
 
 
-  <title>三省轩</title>
+  <title>关于babel，你应该知道的一些事 - 工具篇 | 三省轩</title>
   
 
 
@@ -143,8 +144,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -237,9 +237,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -269,9 +269,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/05/27/关于babel，你应该知道的一些事/" itemprop="url">关于babel，你应该知道的一些事 - 工具篇</a></h1>
+          <h1 class="post-title" itemprop="name headline">关于babel，你应该知道的一些事 - 工具篇</h1>
         
 
         <div class="post-meta">
@@ -283,7 +281,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-27T10:01:18Z">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-27T18:01:18+08:00">
                 2018-05-27
               </time>
             
@@ -332,9 +330,7 @@
       
 
       
-        
-          
-            <h2 id="概要"><a href="#概要" class="headerlink" title="概要"></a>概要</h2><p>babel本身是一个工具，负责将es6/es7的代码转换成es5的代码，以便在现代浏览器里面运行，更重要的是,babel的扩展机制使其可以为React转换jsx，为Flow做静态语法分析。</p>
+        <h2 id="概要"><a href="#概要" class="headerlink" title="概要"></a>概要</h2><p>babel本身是一个工具，负责将es6/es7的代码转换成es5的代码，以便在现代浏览器里面运行，更重要的是,babel的扩展机制使其可以为React转换jsx，为Flow做静态语法分析。</p>
 <p>babel由各种小模块组成，它通过预置一些插件来编译代码，我们接下来会谈到。</p>
 <p>注意: 假设你本地安装了node和npm，且不排斥使用命令行工具，同时确保你的项目里面包含pajkage.json文件；</p>
 <h3 id="babel-cli"><a href="#babel-cli" class="headerlink" title="babel-cli"></a>babel-cli</h3><p>Babel CLI通过命令行实现代码的转换，你可以通过 npm install babel-cli -g 全局安装它，当然也可以在本地项目目录下执行 npm install babel-cli –save-dev 实现本地安装，</p>
@@ -441,8 +437,6 @@
 </ul>
 <h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>babel和其周边的生态在当今web开发中扮演越来越重要的角色，通过这篇文章的介绍，你可以通过配置尽情的使用最新的js规范及周边技术（JSX, Flow, 等等），话不多说，赶快开始吧！</p>
 
-          
-        
       
     </div>
     
@@ -459,151 +453,28 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://javapolo.github.io/2018/01/13/如何使用hexo搭建github pages/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="roger li">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="https://avatars0.githubusercontent.com/u/2307120">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="三省轩">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/01/13/如何使用hexo搭建github pages/" itemprop="url">如何使用hexo搭建github pages</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-13T04:30:05Z">
-                2018-01-13
-              </time>
+              <a href="/2018/01/13/如何使用hexo搭建github pages/" rel="next" title="如何使用hexo搭建github pages">
+                <i class="fa fa-chevron-left"></i> 如何使用hexo搭建github pages
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/01/13/如何使用hexo搭建github pages/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/01/13/如何使用hexo搭建github pages/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><h3 id="1-安装hexo"><a href="#1-安装hexo" class="headerlink" title="1.安装hexo"></a>1.安装hexo</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ sudo npm install -g hexo-cli</span><br><span class="line">$ hexo -v</span><br></pre></td></tr></table></figure>
-<h3 id="2-创建gihub-pages项目-并安装相关依赖"><a href="#2-创建gihub-pages项目-并安装相关依赖" class="headerlink" title="2.创建gihub pages项目, 并安装相关依赖"></a>2.创建gihub pages项目, 并安装相关依赖</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init username.github.io</span><br><span class="line">$ <span class="built_in">cd</span> username.github.io</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
-<p>注意: username即用户在github上对应的帐号名称或者组织名称</p>
-<h3 id="3-启动本地hexo服务"><a href="#3-启动本地hexo服务" class="headerlink" title="3.启动本地hexo服务"></a>3.启动本地hexo服务</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br><span class="line">INFO  Hexo is running at http://0.0.0.0:4000/. Press Ctrl+C to stop.</span><br></pre></td></tr></table></figure>
-<h3 id="4-设置博客的基础信息"><a href="#4-设置博客的基础信息" class="headerlink" title="4.设置博客的基础信息"></a>4.设置博客的基础信息</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">$ vi _config.yml</span><br><span class="line">~~~~~~~~~~~~~~~~~~ _config.yml ~~~~~~~~~~~~~~~~~~</span><br><span class="line"><span class="comment"># Site</span></span><br><span class="line">title: 标题</span><br><span class="line">subtitle: 子标题</span><br><span class="line">description: 博客描述信息</span><br><span class="line">author: 作者</span><br><span class="line">language: 语言</span><br><span class="line">timezone: UTC</span><br><span class="line"></span><br><span class="line"><span class="comment"># URL</span></span><br><span class="line"><span class="comment">## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'</span></span><br><span class="line">url: http://username.github.io/</span><br><span class="line">root: /</span><br><span class="line">permalink: :year/:month/:day/:title/</span><br><span class="line">permalink_defaults:</span><br></pre></td></tr></table></figure>
-<h3 id="5-设置博客对应的git配置信息"><a href="#5-设置博客对应的git配置信息" class="headerlink" title="5.设置博客对应的git配置信息"></a>5.设置博客对应的git配置信息</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br><span class="line">$ vi _config.yml</span><br><span class="line"></span><br><span class="line">~~~~~~~~~~~~~~~~~~ _config.yml ~~~~~~~~~~~~~~~~~~</span><br><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: http://hexo.io/docs/deployment.html</span></span><br><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: git@github.com:username/username.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
-<h3 id="6-启动hexo-watch功能开启实时内容监控实时生成静态内容"><a href="#6-启动hexo-watch功能开启实时内容监控实时生成静态内容" class="headerlink" title="6.启动hexo watch功能开启实时内容监控实时生成静态内容"></a>6.启动hexo watch功能开启实时内容监控实时生成静态内容</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate --watch</span><br></pre></td></tr></table></figure>
-<h3 id="7-新建文章-任意编辑"><a href="#7-新建文章-任意编辑" class="headerlink" title="7.新建文章,任意编辑"></a>7.新建文章,任意编辑</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new new-post</span><br></pre></td></tr></table></figure>
-<h3 id="8-部署博客"><a href="#8-部署博客" class="headerlink" title="8.部署博客"></a>8.部署博客</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -613,10 +484,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -624,6 +496,20 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -644,8 +530,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -701,6 +596,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#概要"><span class="nav-number">1.</span> <span class="nav-text">概要</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#babel-cli"><span class="nav-number">1.1.</span> <span class="nav-text">babel-cli</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#babel-register"><span class="nav-number">1.2.</span> <span class="nav-text">babel-register</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#babel-node"><span class="nav-number">1.3.</span> <span class="nav-text">babel-node</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Configuring-Babel"><span class="nav-number">1.4.</span> <span class="nav-text">Configuring Babel</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#babelrc"><span class="nav-number">1.5.</span> <span class="nav-text">.babelrc</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#babel-polyfill"><span class="nav-number">1.6.</span> <span class="nav-text">babel-polyfill</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#babel高级配置"><span class="nav-number">2.</span> <span class="nav-text">babel高级配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#手工配置插件"><span class="nav-number">2.1.</span> <span class="nav-text">手工配置插件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分环境配置babel"><span class="nav-number">2.2.</span> <span class="nav-text">分环境配置babel</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#构建自己的babel配置"><span class="nav-number">2.3.</span> <span class="nav-text">构建自己的babel配置</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其它工具"><span class="nav-number">3.</span> <span class="nav-text">其它工具</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Linting"><span class="nav-number">3.1.</span> <span class="nav-text">Linting</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#编辑器插件"><span class="nav-number">3.2.</span> <span class="nav-text">编辑器插件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">4.</span> <span class="nav-text">总结</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -841,6 +752,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -858,6 +773,18 @@
       <script id="dsq-count-scr" src="https://javapolo.disqus.com/count.js" async></script>
     
 
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'http://javapolo.github.io/2018/05/27/关于babel，你应该知道的一些事/';
+          this.page.identifier = '2018/05/27/关于babel，你应该知道的一些事/';
+          this.page.title = '关于babel，你应该知道的一些事 - 工具篇';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://javapolo.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
     
 
   
