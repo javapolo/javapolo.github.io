@@ -344,10 +344,10 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">babel example.js --out-file compiled.js</span><br></pre></td></tr></table></figure>
 <p>指令每部分的含义：</p>
 <ul>
-<li>babel 调用babel</li>
-<li>example.js  指定的需要转换的es6/es7文件</li>
-<li>–out-file  babel 编译选项，代表编译完的文件输出选项，可以简写成 -o,如果需要编译目录文件，则输出项用 –output-dir ，可以简写成 －d;</li>
-<li>compiled.js - 指定输出的文件名</li>
+<li>babel 调用babel cli;</li>
+<li>example.js  指定的需要转换的es6/es7文件;</li>
+<li>–out-file  babel 编译选项，代表编译完的文件输出信息，可以简写成 -o，如果需要编译目录文件，则输出项用 –output-dir ，可以简写成 －d;</li>
+<li>compiled.js - 指定输出的文件名;</li>
 </ul>
 <p>每次改完代码都敲一遍指令，显然是件繁琐的事，我们可以通过给package.json的scripts配置一条构建任务指令，实现该步骤的自动化：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    ...</span><br><span class="line">    <span class="string">"scripts"</span>: &#123;</span><br><span class="line">        <span class="string">"build"</span>: <span class="string">"babel ./src -d ./lib -w"</span></span><br><span class="line">    &#125;</span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
